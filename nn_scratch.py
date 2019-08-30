@@ -124,3 +124,8 @@ y_true = np.array([1,0,0,1])
 y_pred = np.array([0,0,0,0])
 
 print(mse_loss(y_true, y_pred))'''
+
+emily = np.array([-7, -3]) # 128 pounds, 63 inches
+frank = np.array([20, 2])  # 155 pounds, 68 inches
+print("Emily: %.3f" % network.feedforward(emily)) # 0.951 - F
+print("Frank: %.3f" % network.feedforward(frank)) # 0.039 - M
